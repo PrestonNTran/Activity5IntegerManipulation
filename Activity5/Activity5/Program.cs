@@ -6,7 +6,59 @@ namespace Activity5
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Length Of Loop?");
+            int length = Int32.Parse(Console.ReadLine());
+
+            int[] nums = new int[length];
+
+            for (int i = 0; i < length; i++)
+            {
+                Console.WriteLine("Enter and integer:");
+                nums[i] = Int32.Parse(Console.ReadLine());
+            }
+
+            bool doLoop = true;
+            while (doLoop)
+            {
+                Console.WriteLine("Select An Option:");
+                Console.WriteLine("1: Display the whole list of input");
+                Console.WriteLine("2: Display every even number");
+                Console.WriteLine("3: Display every odd number");
+                Console.WriteLine("4: Display every 5th number");
+                Console.WriteLine("5: Display the sum of the integers");
+                Console.WriteLine("6: Display every number divisible by 3");
+                Console.WriteLine("7: Quit");
+
+                int input = Int32.Parse(Console.ReadLine());
+
+
+                switch (input)
+                {
+                    case 1:
+                        
+                        break;
+                    case 2:
+
+                        break;
+                    case 3:
+
+                        break;
+                    case 4:
+
+                        break;
+                    case 5:
+
+                        break;
+                    case 6:
+
+                        break;
+                    case 7:
+                        doLoop = false;
+                        break;
+                }
+
+            }
+            Console.WriteLine("Loop Closed");
         }
     }
 }
