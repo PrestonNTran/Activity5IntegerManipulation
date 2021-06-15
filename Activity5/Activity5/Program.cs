@@ -35,16 +35,44 @@ namespace Activity5
                 switch (input)
                 {
                     case 1:
-                        
+                        String list = "";
+                        for(int i = 0; i < nums.Length; i++)
+                        {
+                            list += nums[i] + " ";
+                        }
+                        Console.WriteLine(list);
                         break;
                     case 2:
-
+                        String evens = "";
+                        for (int i = 0; i < nums.Length; i++)
+                        {
+                            if(nums[i]%2 == 0)
+                            {
+                                evens += nums[i] + " ";
+                            }
+                        }
+                        Console.WriteLine(evens);
                         break;
-                    case 3:
+                    case 3: 
+                        { 
+                        
+                      for (int i = 0; i < length; i++) {
+                             
+                                if ( nums[i] % 2 == 1)
+                                {
+                                    Console.WriteLine(nums[i] + " is an odd number");
+                                }
+                            }
 
+                            }
                         break;
                     case 4:
-
+                        {
+                            for (int i = 0; i < length; i = i + 5)
+                            {
+                                Console.WriteLine(nums[i]);
+                            }
+                        }
                         break;
                     case 5:
                     {
