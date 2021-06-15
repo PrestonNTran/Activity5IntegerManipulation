@@ -35,10 +35,23 @@ namespace Activity5
                 switch (input)
                 {
                     case 1:
-
+                        String list = "";
+                        for(int i = 0; i < nums.Length; i++)
+                        {
+                            list += nums[i] + " ";
+                        }
+                        Console.WriteLine(list);
                         break;
                     case 2:
-
+                        String evens = "";
+                        for (int i = 0; i < nums.Length; i++)
+                        {
+                            if(nums[i]%2 == 0)
+                            {
+                                evens += nums[i] + " ";
+                            }
+                        }
+                        Console.WriteLine(evens);
                         break;
                     case 3: 
                         { 
