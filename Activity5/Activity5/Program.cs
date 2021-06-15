@@ -53,11 +53,26 @@ namespace Activity5
                         }
                         Console.WriteLine(evens);
                         break;
-                    case 3:
+                    case 3: 
+                        { 
+                        
+                      for (int i = 0; i < length; i++) {
+                             
+                                if ( nums[i] % 2 == 1)
+                                {
+                                    Console.WriteLine(nums[i] + " is an odd number");
+                                }
+                            }
 
+                            }
                         break;
                     case 4:
-
+                        {
+                            for (int i = 0; i < length; i = i + 5)
+                            {
+                                Console.WriteLine(nums[i]);
+                            }
+                        }
                         break;
                     case 5:
 
