@@ -6,6 +6,17 @@ namespace Activity5
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Length Of Loop?");
+            int length = Int32.Parse(Console.ReadLine());
+
+            int[] nums = new int[length];
+
+            for (int i = 0; i < length; i++)
+            {
+                Console.WriteLine("Enter and integer:");
+                nums[i] = Int32.Parse(Console.ReadLine());
+            }
+
             bool doLoop = true;
             while (doLoop)
             {
@@ -18,7 +29,7 @@ namespace Activity5
                 Console.WriteLine("6: Display every number divisible by 3");
                 Console.WriteLine("7: Quit");
 
-                Int32 input = Int32.Parse(Console.ReadLine());
+                int input = Int32.Parse(Console.ReadLine());
 
 
                 switch (input)
