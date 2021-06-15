@@ -90,7 +90,7 @@ namespace Activity5
                         {
                             if ((nums[i] % 3) == 0)
                             {
-                                    Console.WriteLine(nums[i]);
+                                Console.WriteLine(nums[i]);
                             }
                         }
                     }
