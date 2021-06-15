@@ -35,16 +35,31 @@ namespace Activity5
                 switch (input)
                 {
                     case 1:
-                        
+
                         break;
                     case 2:
 
                         break;
-                    case 3:
+                    case 3: 
+                        { 
+                        
+                      for (int i = 0; i < length; i++) {
+                             
+                                if ( nums[i] % 2 == 1)
+                                {
+                                    Console.WriteLine(nums[i] + " is an odd number");
+                                }
+                            }
 
+                            }
                         break;
                     case 4:
-
+                        {
+                            for (int i = 0; i < length; i = i + 5)
+                            {
+                                Console.WriteLine(nums[i]);
+                            }
+                        }
                         break;
                     case 5:
 
