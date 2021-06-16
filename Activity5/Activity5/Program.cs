@@ -6,15 +6,42 @@ namespace Activity5
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Length Of Loop?");
-            int length = Int32.Parse(Console.ReadLine());
+
+            int length;
+
+            while (true)
+            {
+                Console.WriteLine("Length Of Loop?");
+                try
+                {
+                    length = Int32.Parse(Console.ReadLine());
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine("Invalid Input");
+                    continue;
+                }
+                break;
+            }
 
             int[] nums = new int[length];
 
             for (int i = 0; i < length; i++)
             {
-                Console.WriteLine("Enter and integer:");
-                nums[i] = Int32.Parse(Console.ReadLine());
+                while (true)
+                {
+                    Console.WriteLine("Enter and integer:");
+                    try
+                    {
+                        nums[i] = Int32.Parse(Console.ReadLine());
+                    }
+                    catch (FormatException)
+                    {
+                        Console.WriteLine("Invalid Input");
+                        continue;
+                    }
+                    break;
+                }
             }
 
             bool doLoop = true;
@@ -31,8 +58,21 @@ namespace Activity5
                 Console.WriteLine("8: Reverse numerical order");
                 Console.WriteLine("9: Quit");
 
-                int input = Int32.Parse(Console.ReadLine());
+                int input;
 
+                while (true)
+                {
+                    try
+                    {
+                        input = Int32.Parse(Console.ReadLine());
+                    }
+                    catch (FormatException)
+                    {
+                        Console.WriteLine("Invalid Input");
+                        continue;
+                    }
+                    break;
+                }
 
                 switch (input)
                 {
@@ -48,7 +88,7 @@ namespace Activity5
                         String evens = "";
                         for (int i = 0; i < nums.Length; i++)
                         {
-                            if(nums[i]%2 == 0)
+                            if(Math.Abs(nums[i]%2) == 0)
                             {
                                 evens += nums[i] + " ";
                             }
@@ -59,8 +99,10 @@ namespace Activity5
                         { 
                         
                       for (int i = 0; i < length; i++) {
-                             
-                                if ( nums[i] % 2 == 1)
+                         
+
+
+                                if ( Math.Abs(nums[i]) % 2 == 1)
                                 {
                                     Console.WriteLine(nums[i] + " is an odd number");
                                 }
