@@ -27,7 +27,9 @@ namespace Activity5
                 Console.WriteLine("4: Display every 5th number");
                 Console.WriteLine("5: Display the sum of the integers");
                 Console.WriteLine("6: Display every number divisible by 3");
-                Console.WriteLine("7: Quit");
+                Console.WriteLine("7: Numerical order");
+                Console.WriteLine("8: Reverse numerical order");
+                Console.WriteLine("9: Quit");
 
                 int input = Int32.Parse(Console.ReadLine());
 
@@ -96,7 +98,20 @@ namespace Activity5
                     }
                         break;
                     case 7:
+                    {
+                        Array.Sort(nums);
+                        String numerical = "";
+                        for(int i = 0; i < nums.Length; i++)
+                         {
+                                numerical += nums[i] + " ";
+                         }
+                        Console.WriteLine(numerical);
+
+                        break;
+                    }
+                    case 9:
                         doLoop = false;
+
                         break;
                 }
 
