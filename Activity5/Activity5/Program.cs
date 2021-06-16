@@ -98,6 +98,25 @@ namespace Activity5
                     case 7:
                         doLoop = false;
                         break;
+
+                    case 8:
+                        while (0 < nums.Length)
+                        {
+                            int start = 0;
+                            int end = nums.Length;
+                            int temp = nums[start];
+                            nums[start] = nums[end];
+                            nums[end] = temp;
+                            start++;
+                            end--;
+                        }
+
+
+                        break;
+
+                    case 9:
+                        doLoop = false;
+                        break;
                 }
 
             }
