@@ -46,7 +46,7 @@ namespace Activity5
                         String evens = "";
                         for (int i = 0; i < nums.Length; i++)
                         {
-                            if(nums[i]%2 == 0)
+                            if(Math.Abs(nums[i]%2) == 0)
                             {
                                 evens += nums[i] + " ";
                             }
@@ -57,8 +57,10 @@ namespace Activity5
                         { 
                         
                       for (int i = 0; i < length; i++) {
-                             
-                                if ( nums[i] % 2 == 1)
+                         
+
+
+                                if ( Math.Abs(nums[i]) % 2 == 1)
                                 {
                                     Console.WriteLine(nums[i] + " is an odd number");
                                 }
