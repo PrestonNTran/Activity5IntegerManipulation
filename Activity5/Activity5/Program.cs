@@ -68,7 +68,7 @@ namespace Activity5
                         break;
                     case 4:
                         {
-                            for (int i = 0; i < length; i = i + 5)
+                            for (int i = 4; i < length; i = i + 5)
                             {
                                 Console.WriteLine(nums[i]);
                             }
