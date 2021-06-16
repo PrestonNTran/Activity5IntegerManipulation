@@ -96,14 +96,15 @@ namespace Activity5
                     }
                         break;
                     case 7:
-                        doLoop = false;
+                        
+
                         break;
 
                     case 8:
                         while (0 < nums.Length)
                         {
                             int start = 0;
-                            int end = nums.Length;
+                            int end = nums.Length - 1;
                             int temp = nums[start];
                             nums[start] = nums[end];
                             nums[end] = temp;
