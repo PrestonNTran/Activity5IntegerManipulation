@@ -152,17 +152,18 @@ namespace Activity5
                         break;
                     }
                     case 8:
-                        while (0 < nums.Length)
+                        for (int j = 0; j < (nums.Length / 2); j++)
                         {
-                            int start = 0;
-                            int end = nums.Length - 1;
-                            int temp = nums[start];
-                            nums[start] = nums[end];
-                            nums[end] = temp;
-                            start++;
-                            end--;
+                            int temp = nums[j];
+                            nums[j] = nums[nums.Length - (j + 1)];
+                            nums[nums.Length - (j + 1)] = temp;
                         }
-
+                        String reversed = "";
+                        for (int k = 0; k < nums.Length; k++)
+                        {
+                            reversed += nums[k] + " ";
+                        }
+                        Console.WriteLine(reversed);
 
                         break;
 
